@@ -2,6 +2,8 @@
 
 A full-stack store rating platform implemented from the supplied assessment requirements.
 
+**Submitted by: Vivek**
+
 ## Stack
 
 - Frontend: React + Vite
@@ -11,4 +13,6 @@ A full-stack store rating platform implemented from the supplied assessment requ
 - Password hashing: bcryptjs
 - Database driver: node-postgres (`pg`), using raw SQL instead of an ORM
 
-See `starting.md` for the complete setup guide, architecture, route map, database design, demo credentials, and requirement mapping.
+## Documentation
+
+See [starting.md](./starting.md) for the complete setup guide, architecture, route map, database design, demo credentials, and requirement mapping.
