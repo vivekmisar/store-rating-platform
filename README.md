@@ -4,7 +4,6 @@ The application supports role-based functionality for **Admins, Normal Users, an
 
 ## 🚀 Live Demo
 
-- **Live Application:** [Open StoreRate](YOUR_DEPLOYED_URL)
 - **Demo Video:** [Watch the Project Walkthrough](YOUR_VIDEO_URL)
 
 > The demo video demonstrates the complete application flow across all three user roles.
