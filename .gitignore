@@ -1,0 +1,63 @@
+# ─────────────────────────────────────────────
+#  StoreRate — .gitignore
+#  Generated for: Express + PostgreSQL + React/Vite mono-repo
+# ─────────────────────────────────────────────
+
+# ── Node dependencies ──────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ── Environment / secrets ──────────────────────
+# Never commit real credentials or DB URLs
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+# Keep the example files — they are safe templates
+!.env.example
+
+# ── Build output ───────────────────────────────
+dist/
+build/
+.output/
+out/
+
+# ── Logs ───────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── OS / Editor ────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Assessment / recruitment PDFs ──────────────
+# These are copyrighted Roxiler materials — do not upload
+*.pdf
+
+# ── Personal / internal project notes ──────────
+GITHUB_AND_DEPLOY_GUIDE.md
+
+# ── Misc ───────────────────────────────────────
+*.tgz
+*.zip
+.cache/
+.parcel-cache/
+coverage/
+.nyc_output/
