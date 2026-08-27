@@ -1,8 +1,6 @@
-# StoreRate — Roxiler Full-Stack Assessment
+# StoreRate
 
 A full-stack store rating platform implemented from the supplied assessment requirements.
-
-**Submitted by: Vivek**
 
 ## Stack
 
@@ -16,3 +14,5 @@ A full-stack store rating platform implemented from the supplied assessment requ
 ## Documentation
 
 See [starting.md](./starting.md) for the complete setup guide, architecture, route map, database design, demo credentials, and requirement mapping.
+
+**Created by: Vivek**
