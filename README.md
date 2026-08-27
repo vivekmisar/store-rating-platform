@@ -6,7 +6,7 @@ The application supports role-based functionality for **Admins, Normal Users, an
 
 🚀 [View Live Application](https://store-rating-platform-five-rho.vercel.app)
 
-- [▶️ Watch Demo Video](https://github.com/user-attachments/assets/c954ea48-e062-43e0-b28f-3d9035ebd720)
+- [▶️ Watch Demo Video](https://github.com/user-attachments/assets/8a461a30-5342-4c54-b310-65b0df014e27)
 
 
 ## ✨ Highlights
