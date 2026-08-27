@@ -2,9 +2,12 @@ A full-stack store rating platform built as part of a technical assessment.
 
 The application supports role-based functionality for **Admins, Normal Users, and Store Owners**, allowing users to rate stores while administrators manage users and stores.
 
-## Live Demo
+## Live Demo and Video
 
 🚀 [View Live Application](https://store-rating-platform-five-rho.vercel.app)
+
+- [▶️ Watch Demo Video](https://github.com/user-attachments/assets/c954ea48-e062-43e0-b28f-3d9035ebd720)
+
 
 ## ✨ Highlights
 
@@ -25,11 +28,6 @@ The application supports role-based functionality for **Admins, Normal Users, an
 - **Authentication:** JWT
 - **Password Hashing:** bcryptjs
 - **Database Driver:** node-postgres (`pg`)
-
-
-- **Demo Video:** 
-
-  (https://github.com/user-attachments/assets/c954ea48-e062-43e0-b28f-3d9035ebd720)
 
 ## Documentation
 
