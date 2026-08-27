@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import ErrorMessage from '../components/ErrorMessage.jsx';
 import Loading from '../components/Loading.jsx';
 import { api } from '../services/api.js';
 
 export default function StoresPage() {
+  const [inputFilters, setInputFilters] = useState({ name: '', address: '' });
   const [filters, setFilters] = useState({ name: '', address: '', sortBy: 'name', order: 'asc', page: '1', limit: '12' });
   const [items, setItems] = useState([]);
   const [pagination, setPagination] = useState(null);
@@ -11,6 +12,7 @@ export default function StoresPage() {
   const [error, setError] = useState('');
   const [busyStore, setBusyStore] = useState(null);
   const [ratingValues, setRatingValues] = useState({});
+  const debounceRef = useRef(null);
 
   const query = useMemo(() => ({ ...filters }), [filters]);
 
@@ -36,6 +38,15 @@ export default function StoresPage() {
   useEffect(() => {
     loadStores();
   }, [filters]);
+
+  function updateTextFilter(event) {
+    const { name, value } = event.target;
+    setInputFilters((current) => ({ ...current, [name]: value }));
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => {
+      setFilters((current) => ({ ...current, [name]: value, page: '1' }));
+    }, 400);
+  }
 
   function updateFilter(event) {
     setFilters((current) => ({ ...current, [event.target.name]: event.target.value, page: '1' }));
@@ -73,8 +84,8 @@ export default function StoresPage() {
       </div>
 
       <div className="filter-panel">
-        <input name="name" value={filters.name} onChange={updateFilter} placeholder="Search store name" />
-        <input name="address" value={filters.address} onChange={updateFilter} placeholder="Search address" />
+        <input name="name" value={inputFilters.name} onChange={updateTextFilter} placeholder="Search store name" />
+        <input name="address" value={inputFilters.address} onChange={updateTextFilter} placeholder="Search address" />
         <select name="sortBy" value={filters.sortBy} onChange={updateFilter}>
           <option value="name">Sort by name</option>
           <option value="rating">Sort by rating</option>

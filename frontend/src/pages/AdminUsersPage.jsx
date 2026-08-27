@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ErrorMessage from '../components/ErrorMessage.jsx';
 import Loading from '../components/Loading.jsx';
 import { api } from '../services/api.js';
@@ -102,7 +103,7 @@ export default function AdminUsersPage() {
             <tbody>
               {data.items.map((user) => (
                 <tr key={user.id}>
-                  <td><a className="table-link" href={`/admin/users/${user.id}`}>{user.name}</a></td><td>{user.email}</td><td>{user.address}</td><td><span className="role-pill">{user.role}</span></td>
+                  <td><Link className="table-link" to={`/admin/users/${user.id}`}>{user.name}</Link></td><td>{user.email}</td><td>{user.address}</td><td><span className="role-pill">{user.role}</span></td>
                   <td>{user.role === 'STORE_OWNER' ? user.store ? `${user.store.name} · ★ ${user.store.averageRating.toFixed(2)}` : 'No store assigned' : '—'}</td>
                 </tr>
               ))}

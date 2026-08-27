@@ -512,21 +512,34 @@ The seed script creates demo accounts, a store owner/store, normal users, and ra
 
 ### Demo credentials
 
+> Development/demo accounts only. All seeded accounts share the same password.
+
 ```text
+All accounts — password: Pune@2026
+
 ADMIN
-email: admin@example.com
-password: Admin@123
+  email:  aditi.admin@storerate.demo
 
-STORE OWNER
-email: owner@example.com
-password: Owner@123
+STORE OWNERS (10 accounts, one per store)
+  priya.owner@storerate.demo        McDonalds Baner Pune
+  sandeep.owner@storerate.demo      Shell Petrol Station Wakad
+  meenal.owner@storerate.demo       DMart Bavdhan Superstore
+  rakesh.owner@storerate.demo       Seven Eleven Aundh Market
+  vikram.owner@storerate.demo       Starbucks Kothrud Pune
+  neha.owner@storerate.demo         Reliance Fresh Kharadi
+  amit.owner@storerate.demo         Croma Viman Nagar Store
+  kavita.owner@storerate.demo       Decathlon Hadapsar Pune
+  rohit.owner@storerate.demo        Dominoes Hinjawadi Pune
+  shweta.owner@storerate.demo       Crossword Deccan Bookstore
 
-NORMAL USER
-email: user@example.com
-password: User@123
+NORMAL USERS (12 accounts)
+  ananya.user@storerate.demo
+  arjun.user@storerate.demo
+  sneha.user@storerate.demo
+  (and 9 more — see backend/scripts/seed.js for the full list)
 ```
 
-These are development/demo credentials only. Change them before any real deployment.
+These are development/demo credentials only. Do not use them in production.
 
 ### Step 6 — Start backend
 
