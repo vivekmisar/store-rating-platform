@@ -2,8 +2,9 @@ A full-stack store rating platform built as part of a technical assessment.
 
 The application supports role-based functionality for **Admins, Normal Users, and Store Owners**, allowing users to rate stores while administrators manage users and stores.
 
-## 🚀 Live Demo
+## Live Demo
 
+🚀 [View Live Application](https://store-rating-platform-five-rho.vercel.app)
 
 ## ✨ Highlights
 
